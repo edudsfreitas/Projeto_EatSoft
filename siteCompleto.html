@@ -14,6 +14,7 @@
             width: 235px;
             height: 150px;
         }
+
         .tm-social {
             width: 40px;
             height: 40px;
@@ -25,8 +26,8 @@
 <body>
 
     <!--Menu-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand text-light" href="#">Eat Soft</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+        <a class="navbar-brand text-light font-weight-bold" href="#">Eat Soft</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
             aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
@@ -37,10 +38,10 @@
                     <a class="nav-link text-light" href="#">Home <span class="sr-only">(página atual)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Mapa</a>
+                    <a class="nav-link text-light" href="#section2">Promoções</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Receitas</a>
+                    <a class="nav-link text-light" href="#section3">Receitas</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -52,101 +53,97 @@
     <!--/Menu-->
 
     <!--Carousel-->
-    <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="assets/img/restaurantPoint.png" alt="Primeiro Slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/img/sandwich.png" alt="Segundo Slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Resgate cupons de até 50% OFF</h5>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/img/pizza.png" alt="Terceiro Slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Resgate cupons de até 50% OFF</h5>
-                    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="assets/img/sandwich.png" alt="Primeiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Resgate cupons de até 50% OFF</h5>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Próximo</span>
-            </a>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/img/restaurantPoint.png" alt="Segundo Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/img/pizza.png" alt="Terceiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Resgate cupons de até 50% OFF</h5>
+                </div>
+            </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
     </div>
+
     <!--/Carousel-->
 
-   
-
     <div class="container">
+
         <!--Cards-->
-        <div class="card-columns">
+        <div id="section2" class="card-columns m-3">
             <div class="card">
-                <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
+                <img class="card-img-top"
+                    src="https://image.freepik.com/fotos-gratis/copo-de-cerveja-com-cheeseburger-e-batatas-fritas_23-2148754928.jpg"
+                    alt="Imagem de capa do card">
                 <div class="card-body">
-                    <h5 class="card-title">Título do card que quebra em uma nova linha</h5>
-                    <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma
-                        introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
+                    <h5 class="card-title">As melhores hamburguerias, pertinho de você!</h5>
+                    <p class="card-text">Ver mais...</p>
                 </div>
-            </div>
-            <div class="card p-3">
-                <blockquote class="blockquote mb-0 card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer class="blockquote-footer">
-                        <small class="text-muted">
-                            Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
-                        </small>
-                    </footer>
-                </blockquote>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
-                <div class="card-body">
-                    <h5 class="card-title">Título do card</h5>
-                    <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a
-                        um conteúdo adicional.</p>
-                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-                </div>
-            </div>
-            <div class="card bg-primary text-white text-center p-3">
-                <blockquote class="blockquote mb-0">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-                    <footer class="blockquote-footer">
-                        <small>
-                            Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
-                        </small>
-                    </footer>
-                </blockquote>
             </div>
             <div class="card text-center">
                 <div class="card-body">
-                    <h5 class="card-title">Título do card</h5>
-                    <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a
-                        um conteúdo adicional.</p>
-                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                    <h5 class="card-title">Mussum Ipsum</h5>
+                    <p class="card-text">Quem manda na minha terra sou euzis! Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Casamentiss faiz malandris se pirulitá.</p>
+                    
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <img class="card-img-top"
+                    src="https://image.freepik.com/fotos-gratis/variedade-de-leite-vegetariano-sem-lactose-feito-de-nozes-e-graos_93675-89299.jpg"
+                    alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Zero Lactose</h5>
+                    <p class="card-text">Ver mais...</p>
                 </div>
             </div>
             <div class="card">
-                <img class="card-img" src=".../100px260/" alt="Imagem do card">
+                <img class="card-img-top"
+                    src="https://image.freepik.com/vetores-gratis/banner-promocional-de-oferta-especial_23-2148722482.jpg"
+                    alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Promoção do dia: 2x1</h5>
+                    <p class="card-text">Ver mais...</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top"
+                    src="https://image.freepik.com/fotos-gratis/alimentos-sem-gluten-varias-massas-pao-e-salgadinhos-em-madeira_155003-15937.jpg"
+                    alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Zero Glúten</h5>
+                    <p class="card-text">Ver mais...</p>
+                </div>
             </div>
             <div class="card p-3 text-right">
                 <blockquote class="blockquote mb-0">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <p>Per aumento de cachacis, eu reclamis. Copo furadis é disculpa de bebadis, arcu quam euismod magna.</p>
                     <footer class="blockquote-footer">
                         <small class="text-muted">
-                            Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
+                            <cite title="Título da fonte">Mussum</cite>
                         </small>
                     </footer>
                 </blockquote>
@@ -154,68 +151,109 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Título do card</h5>
-                    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma
-                        introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para
-                        mostrar a altura igual, em ação.</p>
-                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                    <p class="card-text">Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum girarzis, nisi eros vermeio. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.</p>
                 </div>
             </div>
-        </div>
+        </div >
         <!--/Cards-->
 
-         <!--Texto e Video-->
+        <!--Texto e Video-->
 
-    <div class="row mt-5 mb-5">
-        <div class="col-md-6">
-          <h3>PIZZA DE FRIGIDEIRA SEM GLÚTEN</h3>
-          <p>Esta receita de pizza fit de frigideira é feita apenas com 1 garfo e você não precisa abrir a massa com o rolo, é 
-              super prática e fica deliciosamente crocante!
-          </p>
-          <p>A receita da pizza fit leva farinha de aveia, farinha de arroz e polvilho doce. É uma pizza de frigideira sem glúten, 
-              sem leite e sem ovo. Também é vegana se você escolher por recheios veganos.</p>
-          <p>Você prepara a receita em 5 minutos em assa em aproximadamente 15 minutos. A massa é crocante, tem sabor agradável e 
-              parece muito uma massa de pizza tradicional.</p>
-          <p>★ Veja a receita escrita da Pizza de Frigideira Fit ★<a href=" https://bit.ly/34o0gQD">https://bit.ly/34o0gQD</a> </p>
-        </div>
-  
-        <div class="col-md-6">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/nuCEj7HVquk" frameborder="0" allow="accelerometer; 
+        <div  id="section3" class="row mt-5 mb-5 d-flex justify-content-center">
+            <div class="col-md-6">
+                <h3>RECEITA: PIZZA SEM GLÚTEN</h3>
+                <p>Esta receita de pizza fit de frigideira é feita apenas com 1 garfo e você não precisa abrir a massa
+                    com o rolo, é
+                    super prática e fica deliciosamente crocante!
+                </p>
+                <p>A receita da pizza fit leva farinha de aveia, farinha de arroz e polvilho doce. É uma pizza de
+                    frigideira sem glúten,
+                    sem leite e sem ovo. Também é vegana se você escolher por recheios veganos.</p>
+                <p>Você prepara a receita em 5 minutos em assa em aproximadamente 15 minutos. A massa é crocante, tem
+                    sabor agradável e
+                    parece muito uma massa de pizza tradicional.</p>
+                <p>★ Veja a receita escrita da Pizza de Frigideira Fit ★<a
+                        href=" https://bit.ly/34o0gQD">https://bit.ly/34o0gQD</a> </p>
+            </div>
+
+            <div class="col-md-6">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nuCEj7HVquk" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-           
-      <!--/Texto e Video-->
-      
-    </div>
-
-     <!--Jumbotron-->
-
-     <div class="jumbotron jumbotron-fluid">
-
-        <div class="container">
-            <div class="row mt-5 d-flex justify-content-center">
-
-                <div class="col-md-4 p-1">    
-                    <img class="tm-logo " src="assets/img/eatsoft.png" alt="">
-                </div>
-                <div class="col-md-6 p-1">
-                    <h1 class="display-4">Sobre</h1>
-                    <p class="lead">A EatSoft é um App voltado para pessoas com intolerância a lactose, glútem e outras restrições alimentares, 
-                        onde o usuário pode encontrar restaurantes que atendam suas necessidades e 
-                        vizualizar cardápios com todos os ingredientes utilizados nos pratos.
-                        Além disso, contamos com um sistema de certificados que mostram se os restaurantes se previnem de contaminção cruzada.
-                    </p>
-                </div>
             </div>
         </div>
+
+        <!--/Texto e Video-->
+
+
+
+    </div>
+
+    <!--Jumbotron-->
+
+    <div class="jumbotron jumbotron-fluid">
+
+
+        <div class="row mt-5 d-flex justify-content-center">
+
+            <div class="col-md-3 p-1 m-3">
+                <img class="tm-logo " src="assets/img/eatsoft.png" alt="">
+            </div>
+            <div class="col-md-6 p-1">
+                <h2 class="display-4">Sobre nós</h2>
+                <p class="lead p-1">A EatSoft é um App voltado para pessoas com intolerância a lactose, glútem e outras
+                    restrições alimentares,
+                    onde o usuário pode encontrar restaurantes que atendam suas necessidades e
+                    vizualizar cardápios com todos os ingredientes utilizados nos pratos.
+                    Além disso, contamos com um sistema de certificados que mostram se os restaurantes se previnem
+                    de contaminção cruzada.
+                </p>
+            </div>
+        </div>
+
+         <!--Formulário de contato-->
+
+            <div class="col-md-12 m-4">
+                <h2 class="text-center">
+                    Entre em contato conosco
+                </h2>
+            </div>
+    
+        <div class="row mt-5 d-flex justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group lead p-1">
+                        <label for="exampleFormControlInput1">Endereço de email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="nome@exemplo.com">
+                    </div>
+    
+                    <div class="form-group lead p-1">
+                        <label for="exampleFormControlTextarea1">Mensagem</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+    
+                    <div class="form-group d-flex justify-content-end">
+                        <button class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+    
+        </div>
+        
+        <!--/Formulário de contato-->
+
     </div>
 
     <!--/Jumbotron-->
-                
+
+   
+
+    
+
     <!--Rodapé-->
     <hr>
     <footer>
-        
+
         <div class="row mb-3">
             <div class="col-md-12 d-flex justify-content-center">
 
@@ -226,23 +264,23 @@
                 <a href="https://www.linkedin.com/in/edu-freitas/" target="_blank" class="p-3">
                     <img class="tm-social" src="assets/img/linkedin.png" alt="Logo Linkedin">
                 </a>
-            </div>   
+            </div>
         </div>
 
         <div class="row">
             <div class="col-md-12">
-              <p class="text-center">
-                Todos os direitos reservados: EatSoft &copy
-              </p>
+                <p class="text-center">
+                    Todos os direitos reservados: EatSoft &copy
+                </p>
             </div>
         </div>
     </footer>
-                <!--/Rodapé-->
-        
-                          
+    <!--/Rodapé-->
 
 
-            
+
+
+
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
